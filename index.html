@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="carousel-section">
+      <div class="carousel-section--img">
+        <img src="images/dog1.jpg" alt="dog1" />
+        <img src="images/dog2.jpeg" alt="dog2" />
+        <img src="images/dog3.jpg" alt="dog3" />
+        <img src="images/dog4.jpg" alt="dog4" />
+      </div>
+      <button class="back" onclick="prevSlide()">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="next" onclick="nextSlide()">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+      <div class="dots-area"></div>
+    </section>
+  </body>
+</html>
